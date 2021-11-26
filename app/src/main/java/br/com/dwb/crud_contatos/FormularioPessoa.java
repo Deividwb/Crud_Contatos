@@ -15,7 +15,7 @@ import br.com.dwb.crud_contatos.model.Pessoa;
 public class FormularioPessoa extends AppCompatActivity {
     EditText editText_Nome, editText_Cpf, editText_Endereço, editText_Telefone;
     Button btn_Poliform;
-    Pessoa editarPessoa,pessoa;
+    Pessoa editarPessoa, pessoa;
     PessoaDAO bdHelper;
 
 
@@ -28,7 +28,7 @@ public class FormularioPessoa extends AppCompatActivity {
         bdHelper = new PessoaDAO(FormularioPessoa.this);
 
         Intent intent = getIntent();
-        editarPessoa = (Pessoa) intent.getSerializableExtra("pessoaescolhida");
+        editarPessoa = (Pessoa) intent.getSerializableExtra("pessoa");
 
         editText_Nome = (EditText) findViewById(R.id.editText_Nome);
         editText_Cpf = (EditText) findViewById(R.id.editText_Cpf);
@@ -43,7 +43,7 @@ public class FormularioPessoa extends AppCompatActivity {
             editText_Nome.setText(editarPessoa.getNome());
             editText_Cpf.setText(editarPessoa.getCpf());
             editText_Endereço.setText(editarPessoa.getEnderecos());
-            editText_Telefone.setText(editarPessoa.getTelefones()+"");
+            editText_Telefone.setText(editarPessoa.getTelefones());
 
             pessoa.setId(editarPessoa.getId());
 
@@ -51,18 +51,18 @@ public class FormularioPessoa extends AppCompatActivity {
             btn_Poliform.setText("Cadastrar Nova Pessoa");
         }
 
-        btn_Poliform.setOnClickListener(new  View.OnClickListener() {
+        btn_Poliform.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 pessoa.setNome(editText_Nome.getText().toString());
-                pessoa.setCpf(Integer.parseInt(editText_Cpf.getText().toString()));
+                pessoa.setCpf(editText_Cpf.getText().toString());
                 pessoa.setEnderecos(editText_Endereço.getText().toString());
                 pessoa.setTelefones(editText_Telefone.getText().toString());
 
-                if(btn_Poliform.getText().toString().equals("Cadastrar Nova Pessoa")){
+                if (btn_Poliform.getText().toString().equals("Cadastrar Nova Pessoa")) {
                     bdHelper.salvarPessoa(pessoa);
                     bdHelper.close();
-                }else{
+                } else {
                     bdHelper.alterarPessoa(pessoa);
                     bdHelper.close();
                 }

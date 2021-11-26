@@ -21,7 +21,7 @@ public class PessoaDAO extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String pessoas = "CREATE TABlE pessoa(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome TEXT NOT NULL, cpf INTEGER NOT NULL, enderecos TEXT NOT NULL, telefones TEXT NOT NULL);";
+        String pessoas = "CREATE TABlE pessoa(id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, nome TEXT NOT NULL, cpf TEXT NOT NULL, enderecos TEXT NOT NULL, telefones TEXT NOT NULL);";
         db.execSQL(pessoas);
     }
 
@@ -69,7 +69,7 @@ public class PessoaDAO extends SQLiteOpenHelper {
             Pessoa pessoas = new Pessoa();
             pessoas.setId(cursor.getLong(0));
             pessoas.setNome(cursor.getString(1));
-            pessoas.setCpf(cursor.getInt(2));
+            pessoas.setCpf(cursor.getString(2));
             pessoas.setEnderecos(cursor.getString(3));
             pessoas.setTelefones(cursor.getString(4));
 

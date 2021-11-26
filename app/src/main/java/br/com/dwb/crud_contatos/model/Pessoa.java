@@ -6,7 +6,7 @@ public class Pessoa implements Serializable {
 
     private Long id;
     private  String nome;
-    private Integer cpf;
+    private String cpf;
     private String enderecos;
     private String telefones;
 
@@ -30,11 +30,11 @@ public class Pessoa implements Serializable {
         this.nome = nome;
     }
 
-    public int getCpf() {
+    public String getCpf() {
         return cpf;
     }
 
-    public void setCpf(Integer cpf) {
+    public void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
@@ -53,5 +53,4 @@ public class Pessoa implements Serializable {
     public void setTelefones(String telefones) {
         this.telefones = telefones;
     }
-
 }

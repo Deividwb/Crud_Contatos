@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 Pessoa pessoaEscolhida = (Pessoa) parent.getItemAtPosition(position);
 
                 Intent i = new Intent(MainActivity.this, FormularioPessoa.class);
-                i.putExtra("pessoaescolhida",pessoaEscolhida);
+                i.putExtra("pessoa",pessoaEscolhida);
                 startActivity(i);
             }
         });

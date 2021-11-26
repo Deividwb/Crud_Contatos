@@ -1,9 +1,5 @@
 br/com/dwb/crud_contatos/BuildConfig.java
  br.com.dwb.crud_contatos.BuildConfig
-br/com/dwb/crud_contatos/model/Pessoa.java
- br.com.dwb.crud_contatos.model.Pessoa
-br/com/dwb/crud_contatos/bdhelper/PessoaDAO.java
- br.com.dwb.crud_contatos.bdhelper.PessoaDAO
 br/com/dwb/crud_contatos/MainActivity.java
  br.com.dwb.crud_contatos.MainActivity
  br.com.dwb.crud_contatos.MainActivity$1
@@ -13,3 +9,7 @@ br/com/dwb/crud_contatos/MainActivity.java
 br/com/dwb/crud_contatos/FormularioPessoa.java
  br.com.dwb.crud_contatos.FormularioPessoa
  br.com.dwb.crud_contatos.FormularioPessoa$1
+br/com/dwb/crud_contatos/bdhelper/PessoaDAO.java
+ br.com.dwb.crud_contatos.bdhelper.PessoaDAO
+br/com/dwb/crud_contatos/model/Pessoa.java
+ br.com.dwb.crud_contatos.model.Pessoa
