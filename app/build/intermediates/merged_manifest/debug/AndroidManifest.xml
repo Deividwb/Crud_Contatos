@@ -19,6 +19,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.Crud_Contatos" >
         <activity
+            android:name="br.com.dwb.crud_contatos.AdicionarTelefone"
+            android:exported="false" />
+        <activity
+            android:name="br.com.dwb.crud_contatos.PrintEndereco"
+            android:exported="false" />
+        <activity
+            android:name="br.com.dwb.crud_contatos.MostrarEndereco"
+            android:exported="false" />
+        <activity
             android:name="br.com.dwb.crud_contatos.FormularioPessoa"
             android:exported="false" />
         <activity

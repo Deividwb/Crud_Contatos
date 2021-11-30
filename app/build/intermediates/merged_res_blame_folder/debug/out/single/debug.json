@@ -1,11 +1,19 @@
 [
     {
+        "merged": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_mostrar_endereco.xml.flat",
+        "source": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\src\\main\\res\\layout\\activity_mostrar_endereco.xml"
+    },
+    {
         "merged": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
         "merged": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
         "source": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_print_endereco.xml.flat",
+        "source": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\src\\main\\res\\layout\\activity_print_endereco.xml"
     },
     {
         "merged": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
@@ -34,6 +42,10 @@
     {
         "merged": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_cadastrar_pessoa.xml.flat",
         "source": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\src\\main\\res\\layout\\activity_cadastrar_pessoa.xml"
+    },
+    {
+        "merged": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_adicionar_telefone.xml.flat",
+        "source": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\src\\main\\res\\layout\\activity_adicionar_telefone.xml"
     },
     {
         "merged": "C:\\MeusProgramas\\Android\\Crud_Contatos\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",

@@ -1,15 +1,22 @@
-br/com/dwb/crud_contatos/BuildConfig.java
- br.com.dwb.crud_contatos.BuildConfig
 br/com/dwb/crud_contatos/MainActivity.java
  br.com.dwb.crud_contatos.MainActivity
  br.com.dwb.crud_contatos.MainActivity$1
  br.com.dwb.crud_contatos.MainActivity$2
  br.com.dwb.crud_contatos.MainActivity$3
  br.com.dwb.crud_contatos.MainActivity$4
+br/com/dwb/crud_contatos/AdicionarTelefone.java
+ br.com.dwb.crud_contatos.AdicionarTelefone
 br/com/dwb/crud_contatos/FormularioPessoa.java
  br.com.dwb.crud_contatos.FormularioPessoa
  br.com.dwb.crud_contatos.FormularioPessoa$1
+ br.com.dwb.crud_contatos.FormularioPessoa$2
+br/com/dwb/crud_contatos/model/PessoaEndereco.java
+ br.com.dwb.crud_contatos.model.PessoaEndereco
 br/com/dwb/crud_contatos/bdhelper/PessoaDAO.java
  br.com.dwb.crud_contatos.bdhelper.PessoaDAO
+br/com/dwb/crud_contatos/MostrarEndereco.java
+ br.com.dwb.crud_contatos.MostrarEndereco
+ br.com.dwb.crud_contatos.MostrarEndereco$1
+ br.com.dwb.crud_contatos.MostrarEndereco$2
 br/com/dwb/crud_contatos/model/Pessoa.java
  br.com.dwb.crud_contatos.model.Pessoa

@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Parcelable;
 import android.view.ContextMenu;
 import android.view.MenuItem;
 import android.view.View;
@@ -13,7 +12,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 
-import java.io.Serializable;
 import java.util.ArrayList;
 
 import br.com.dwb.crud_contatos.bdhelper.PessoaDAO;
@@ -27,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     Pessoa pessoas;
     ArrayAdapter adapter;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,13 +34,14 @@ public class MainActivity extends AppCompatActivity {
         Button btnCadastrar = (Button) findViewById(R.id.btn_Cadastrar);
         btnCadastrar.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
-                Intent intent = new Intent(MainActivity.this, FormularioPessoa.class);
+                Intent intent = new Intent(MainActivity.this, FormularioPessoa.class);//troquei formulario.class por mostrarEnderecp.class
                 startActivity(intent);
             }
         });
-        lista = (ListView) findViewById(R.id.listview_Pessoas);
+        lista = (ListView) findViewById(R.id.listview_Pessoa);//mostra a lista de pessoas
         registerForContextMenu(lista);
 
+//qd clica na lista ativa outa entity original
         lista.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                 Pessoa pessoaEscolhida = (Pessoa) parent.getItemAtPosition(position);
 
                 Intent i = new Intent(MainActivity.this, FormularioPessoa.class);
-                i.putExtra("pessoa",pessoaEscolhida);
+                i.putExtra("pessoa_escolhida",pessoaEscolhida);
                 startActivity(i);
             }
         });
@@ -69,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-        MenuItem menuDelete = menu.add("Deletar Esta Pessoa");
+        MenuItem menuDelete = menu.add("Adicionar Telefone");
         menuDelete.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
             @Override
             public boolean onMenuItemClick(MenuItem item) {
@@ -81,6 +81,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
 
     @Override
     protected void onResume() {

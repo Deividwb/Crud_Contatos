@@ -15,7 +15,7 @@
         tools:ignore="MissingConstraints">
 
         <EditText
-            android:id="@+id/editText_Nome"
+            android:id="@+id/editText_Logradouro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -23,7 +23,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText_Cpf"
+            android:id="@+id/editText_Numero"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -31,7 +31,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText_Endereço"
+            android:id="@+id/editText_Cep"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -47,10 +47,16 @@
             android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/btn_Poliform"
+            android:id="@+id/btn_AtualizarCadastro"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="btn"/>
+
+        <Button
+            android:id="@+id/btn_Endereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Endereço Completo" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

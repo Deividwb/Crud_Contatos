@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Crud_Contatos">
         <activity
+            android:name=".AdicionarTelefone"
+            android:exported="false" />
+        <activity
+            android:name=".PrintEndereco"
+            android:exported="false" />
+        <activity
+            android:name=".MostrarEndereco"
+            android:exported="false" />
+        <activity
             android:name=".FormularioPessoa"
             android:exported="false" />
         <activity
